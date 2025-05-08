@@ -1,0 +1,113 @@
+/* Footer Styles */
+.app-footer {
+  padding: 2rem 0;
+  background: linear-gradient(to top, var(--background-dark), transparent);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  z-index: 10;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-brand-name {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--primary);
+  letter-spacing: 1px;
+  margin-bottom: 0.25rem;
+}
+
+.footer-slogan {
+  font-size: 0.875rem;
+  color: var(--text-medium);
+  font-weight: 300;
+}
+
+.footer-info {
+  text-align: right;
+  font-size: 0.875rem;
+  color: var(--text-medium);
+}
+
+/* Add a subtle glowing line at the top of the footer */
+.app-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--primary) 20%, 
+    var(--secondary) 50%, 
+    var(--primary) 80%, 
+    transparent 100%
+  );
+  opacity: 0.5;
+}
+
+.footer-links ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-left: 1.5rem;
+}
+
+.footer-links a {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.15s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: #343a40;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-footer {
+    padding: 1.5rem 0;
+  }
+  
+  .footer-container {
+    padding: 0 1rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .footer-brand {
+    align-items: center;
+  }
+  
+  .footer-info {
+    text-align: center;
+  }
+} 
