@@ -34,6 +34,13 @@ weights/
 !Python/Fine_Tuned_Model_5/*.model
 !Python/Fine_Tuned_Model_5/*.pt
 
+# Results and validation directories
+Python/Fine_Tuned_Results_*/
+Python/validation_results_encoder_*/
+Python/Fine_Tuned_Model_2/
+Python/New Results/
+data/
+
 # Python
 __pycache__/
 *.py[cod]
