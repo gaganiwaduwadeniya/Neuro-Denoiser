@@ -28,11 +28,11 @@ weights/
 *.onnx
 
 # Explicitly allow Fine_Tuned_Model_5 models
-!Fine_Tuned_Model_5/
-!Fine_Tuned_Model_5/*.keras
-!Fine_Tuned_Model_5/*.h5
-!Fine_Tuned_Model_5/*.model
-!Fine_Tuned_Model_5/*.pt
+!Python/Fine_Tuned_Model_5/
+!Python/Fine_Tuned_Model_5/*.keras
+!Python/Fine_Tuned_Model_5/*.h5
+!Python/Fine_Tuned_Model_5/*.model
+!Python/Fine_Tuned_Model_5/*.pt
 
 # Python
 __pycache__/
@@ -57,6 +57,7 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+*.png
 
 # Environment files
 .env
